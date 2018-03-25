@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpModule} from "@angular/http";
+import {RouterModule, Routes} from "@angular/router";
 
 import { AppComponent } from './app.component';
 import { MainContainerComponent } from './main-container/main-container.component';
@@ -22,7 +24,10 @@ import { ClientComponent } from './main-container/client/client.component';
     ClientComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
