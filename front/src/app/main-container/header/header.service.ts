@@ -8,6 +8,7 @@ export class HeaderService {
   }
 
   headerNames: [RoutItem] = [
+    {name: 'home', translate: 'В начало', url: 'restart', subMenu: null},
     {
       name: 'forParent', translate: 'Для Родителей', url: 'forParent', subMenu: [
         {name: 'cost', translate: 'Стоимость', url: 'cost'},

@@ -13,7 +13,7 @@
     <div class="navbar hidden-phone">
       <ul class="nav" >
         <li *ngFor="let h of headers">
-          <a *ngIf="!h.subMenu" style="cursor:pointer" [routerLink]=h.url routerLinkActive = active>{{h.translate}} </a>
+          <a *ngIf="!h.subMenu" style="cursor:pointer" [routerLink]=h.url >{{h.translate}} </a>
           <a class="dropdown-toggle" *ngIf="h.subMenu"
              data-toggle="dropdown"
              style="cursor:pointer"
